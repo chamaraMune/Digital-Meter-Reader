@@ -65,14 +65,14 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
-                        <a class="navbar-brand" href="index.html">Digital Meter Reader</a>
+                        <a class="navbar-brand" href="index.jsp">Digital Meter Reader</a>
                     </div>
                     <div class="navbar-collapse collapse">
 
                         <!-- Start Navigation List -->
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a class="active" href="index.html">Home</a>
+                                <a class="active" href="index.jsp">Home</a>
                             </li>
                             <li>
                                 <a href="about.html">About Us</a>
@@ -84,7 +84,7 @@
                                 <a href="portfolio.html">Portfolio</a>
                             </li>
                             <li>
-                                <a href="blog.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Sign In</a>
+                                <a href="sign_In.jsp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Sign In</a>
                                
                             </li>
                             <li><a href="contact.html"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Request DMR</a>
