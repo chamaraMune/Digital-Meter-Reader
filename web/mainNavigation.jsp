@@ -44,7 +44,9 @@
 
         <!-- Responsive CSS Style -->
         <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
-
+        
+        <!--this CSS file created to customize navigation bar not by template owner-->
+        <link rel="stylesheet" type="text/css" href="public/css/mainNavigation.css">
 
         <script src="public/js/modernizrr.js"></script>
 
@@ -82,14 +84,10 @@
                                 <a href="portfolio.html">Portfolio</a>
                             </li>
                             <li>
-                                <a href="blog.html">Blog</a>
-                                <ul class="dropdown">
-                                    <li>
-                                        <a href="blog-item.html">Item Page</a>
-                                    </li>
-                                </ul>
+                                <a href="blog.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Sign In</a>
+                               
                             </li>
-                            <li><a href="contact.html">Contact</a>
+                            <li><a href="contact.html"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Request DMR</a>
                             </li>
                         </ul>
                         <!-- End Navigation List -->
