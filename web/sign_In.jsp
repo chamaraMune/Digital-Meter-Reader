@@ -129,37 +129,42 @@
                                             </div>
 	                            </div>
 	                            <div class="form-bottom">
-				        <form role="form" action="" method="post" class="registration-form">
+				        <form role="form" action="RequestFormHandling" method="post" class="registration-form">
 				            <div class="form-group">
 				                <label class="sr-only" for="form-first-name">First name</label>
-				                <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+				                <input type="text" name="firstname" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-last-name">Last name</label>
-				                <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+				                <input type="text" name="lastname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
 				            </div>
                                             <div class="form-group">
 				                <label class="sr-only" for="form-address">Address</label>
-				                <input type="text" name="form-address" placeholder="Address..." class="form-email form-control" id="form-email">
+				                <input type="text" name="address" placeholder="Address..." class="form-email form-control" id="form-email">
 				            </div>
                                                         
                                             <div class="form-group">
                                                 <label class="sr-only" for="form-national_id">National ID No</label>
-				                <input type="text" name="form-national_id" placeholder="National ID No..." class="form-email form-control" id="form-email">
+				                <input type="text" name="nationalId" placeholder="National ID No..." class="form-email form-control" id="form-email">
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-email">Email</label>
-				                <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                                <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
+				            </div>
+                                            <div class="form-group">
+				                <label class="sr-only" for="form-mobilenumber">Mobile Number</label>
+                                                <input type="text" name="mobilenumber" placeholder="Mobile No..." class="form-email form-control" id="form-email">
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-email">Electricity Account No</label>
-				                <input type="text" name="form-elecricity-account-no" placeholder="Electricity Account No..." class="form-email form-control" id="form-email">
+				                <input type="text" name="electricityAccount" placeholder="Electricity Account No..." class="form-email form-control" id="form-email">
 				            </div>
                                             <div class="form-group">
 				                <label class="sr-only" for="form-area-office">Area Office</label>
-				                <input type="text" name="form-area-office" placeholder="Area Office..." class="form-email form-control" id="form-email">
+				                <input type="text" name="areaOffice" placeholder="Area Office..." class="form-email form-control" id="form-email">
 				            </div>
-                                            <button type="submit" class="btn">Sign me up!</button>
+                                            
+                                            <button type="submit" class="btn">Register</button>
 				        </form>
                                     </div>
                                 </div>
