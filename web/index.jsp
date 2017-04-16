@@ -276,17 +276,7 @@
 
         <script src="public/js/script.js"></script>
         
-        <%
-            boolean isRequestFormSubmitted = (boolean) request.getAttribute("flag_requestForm");
-            String message = (String) request.getAttribute("reguestFormMsg");
-            
-        %>
-        <script type="text/javascript">
-            var msg = "<%=message%>";
-            if(msg!=='null'){
-                alert(msg);
-            }
-        </script>t>
+        
 
 
     </body>
