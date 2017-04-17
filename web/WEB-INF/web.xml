@@ -8,6 +8,10 @@
         <servlet-name>RequestFormHandling</servlet-name>
         <servlet-class>com.dmr.project.controller.RequestFormHandling</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.dmr.project.controller.HomeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
         <url-pattern>/LoginHandler</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>RequestFormHandling</servlet-name>
         <url-pattern>/RequestFormHandling</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/HomeServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -11,19 +11,22 @@ package com.dmr.project.model;
  */
 
 public class User {
-    int userId;
-    String firstname;
-    String lastname;
-    String address;
-    String nationalId;
-    String email;
-    int mobileNo;
-    int cebAccountNo;
-    String areaOffice;
-    boolean isMeterIssued;
-    int meterId;
-    String requestDate;
-    String issuedDate;
+    
+    private int userId;
+    private String firstname;
+    private String lastname;
+    private String address;
+    private String nationalId;
+    private String email;
+    private int mobileNo;
+    private int cebAccountNo;
+    private String areaOffice;
+    private boolean isMeterIssued;
+    private int meterId;
+    private String requestDate;
+    private String issuedDate;
+    private String password;
+    private String username;
 
     public String getRequestDate() {
         return requestDate;
@@ -127,6 +130,22 @@ public class User {
 
     public void setMeterId(int meterId) {
         this.meterId = meterId;
+    }
+    
+    public void setPassword(String password){
+        this.password = password;
+    }
+    
+    public String getPassowrd(){
+        return password;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
     
     

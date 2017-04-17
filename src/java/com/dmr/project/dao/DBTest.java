@@ -25,7 +25,7 @@ public class DBTest {
             PreparedStatement statement =  con.prepareStatement(query);
             statement.setString(1, username);
             statement.setString(2,password);
-            statement.executeUpdate();
+            statement.execute();
         }
         catch(SQLException ex){
             

@@ -12,35 +12,48 @@ package com.dmr.project.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class DBConnection {
-    public static java.sql.Connection connect() {
+    public static java.sql.Connection connect()  {
 //        initializing Connection variable.
         Connection con = null;
-        
         try {
             Class.forName("com.mysql.jdbc.Driver");
-        } catch (ClassNotFoundException ex) {
-            System.out.println("Exception in first try block: "+ex);
+        } 
+        catch (ClassNotFoundException ex) {
+            System.out.println("DBConnection class :"+ex);
         }
+         
+       
         
 //        Connection parameters
         String url = "jdbc:mysql://localhost:3306/dmr";
         String username = "root";
         String password = "root";
-        
+            
         try {
-            
-//            Establishing connection
+            //            Establishing connection
             con = DriverManager.getConnection(url,username,password);
-            return con;
-            
-            } 
+        } 
         catch (SQLException ex) {
-            System.out.println("EXception in second try block: "+ex);
+            System.out.println("SQL Exception : "+ ex);
         }
         
+//        Test whether connection is established or not
+        if(con != null){
+            System.out.println("****CONNECT TO THE DATABASE*****");
+        }
+        else{
+            System.out.println("####NOT CONNECT TO THE DATABASE");
+        }
         return con;
+            
+            
+       
+        
+        
     }
 }
