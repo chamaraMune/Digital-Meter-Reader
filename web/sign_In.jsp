@@ -73,13 +73,13 @@
         <%@include file="mainNavigation.jsp" %>
 
         <!-- Top content -->
-        <div class="top-content">
+<!--        <div class="top-content">
         	
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
                         
-                        <!--Starting login form-->
+                        Starting login form
                         <div class="col-sm-5">
                             <div class="form-box">
 	                        <div class="form-top">
@@ -94,27 +94,27 @@
                                 
                                 <div class="form-bottom">
 				    <form role="form" action="LoginHandler" method="post" class="login-form">
-                                        <!--username input field in login form-->
+                                        username input field in login form
 				        <div class="form-group">
 				            <label class="sr-only" for="form-username">Username</label>
                                             <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username" >
 				        </div>
-                                        <!--password input field in login form-->        
+                                        password input field in login form        
 				        <div class="form-group">
 				            <label class="sr-only" for="form-password">Password</label>
                                             <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" >
 				        </div>
-                                        <!--Submit button in login form-->
+                                        Submit button in login form
 				        <button type="submit" class="btn">Sign in!</button>
 				    </form>
 			        </div>
 		            </div>
-		        </div>
+		        </div>-->
                         <!--Ending login form-->
 	                        
                        
                         
-                        <div class="col-sm-1 middle-border"></div>
+                        
                         <div class="col-sm-1"></div>
                         <!--Starting request form-->
                         <div class="col-sm-5">
@@ -164,7 +164,7 @@
 				                <input type="text" name="areaOffice" placeholder="Area Office..." class="form-email form-control" id="form-email">
 				            </div>
                                             
-                                            <button type="submit" class="btn">Register</button>
+                                            <button type="submit" class="btn" style="background-color: #5368C8;">Register</button>
 				        </form>
                                     </div>
                                 </div>

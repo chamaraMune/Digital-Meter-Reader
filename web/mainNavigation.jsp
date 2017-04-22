@@ -78,7 +78,7 @@
             font-family: 'Arial', sans-serif;
          } 
          .modal{
-                border-radius: 7px;
+                border-radius: 20px;
                 background-color: transparent; 
                 margin:30px auto 0;
                 padding:6px;  
@@ -92,6 +92,8 @@
                 
                
          }
+         
+         
        </style>
         
         
@@ -127,33 +129,17 @@
 
                         <!-- Start Navigation List -->
                         <ul class="nav navbar-nav navbar-right">
-<!--                            <li>
-                                <a class="active" href="index.jsp">Home</a>
-                            </li>-->
-<!--                            <li>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="service.html">Service</a>
-                            </li>
-                            <li>
-                                <a href="portfolio.html">Portfolio</a>
-                            </li>-->
+
                             <li>
                                 <a href="#"  data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Log In</a>
                                
                             </li>
                             <li>
-                                <a href="sign_In.jsp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Request DMR</a>
+                                <a href="sign_In.jsp" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Request DMR</a>
                                
                             </li>
                         </ul>
                             
-                            
-                            <!--
-                            <li><a href="contact.html"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Request DMR</a>
-                            </li>-->
-<!--                        </ul>-->
                         <!-- End Navigation List -->
                     </div>
                 </div>
@@ -173,7 +159,7 @@
                     </div>
                     
                         <div class="form-box">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div  class="form-box">
                                    
                                 </div>
@@ -199,20 +185,10 @@
                 </div>
             </div>
         
-<!--        <script>
+        
             
-            $(function(){
-                $(window).resize(function(event){
-                    $('#myModal').position({
-                        my:'center',
-                        at:'center',
-                        of:'window',
-                        collision :'fit'
-                    });
-                });
-            });
-            
-        </script>-->
+        
+
         
         
         

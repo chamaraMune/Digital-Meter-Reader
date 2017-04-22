@@ -50,11 +50,11 @@ public class LoginHandler extends HttpServlet {
         if(isValid)
         {
             
+            
             HttpSession session = request.getSession();
             session.setAttribute("loggedUsername", username);
             response.sendRedirect("HomeServlet");
-//            RequestDispatcher rd = request.getRequestDispatcher("/HomeServlet");
-//            rd.include(request, response);
+
         }
         else
         {
