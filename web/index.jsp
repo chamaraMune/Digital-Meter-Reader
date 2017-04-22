@@ -48,7 +48,7 @@
 
         <%@include file="mainNavigation.jsp" %>
 
-
+        
         <!-- Start Header Section -->
         <div class="banner">
             <div class="overlay">
@@ -78,10 +78,7 @@
                <div class="col-md-5">
                    <div class="about-img">
                        <img src="public/images/corporate1.jpg" class="img-responsive" alt="About images">
-                       <div class="head-text">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis metus vitae ligula elementum ut luctus lorem facilisis.</p>
-                           <span>CEO, Themebean</span>
-                       </div>
+
                    </div>
                </div>
                <div class="col-md-7">
@@ -263,18 +260,18 @@
 
 
        <!-- Sulfur JS File -->
-        <script src="public/js/jquery-2.1.3.min.js"></script>
+<!--        <script src="public/js/jquery-2.1.3.min.js"></script>
         <script src="public/js/jquery-migrate-1.2.1.min.js"></script>
         <script src="public/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/js/owl.carousel.min.js"></script>
         <script src="public/js/jquery.appear.js"></script>
         <script src="public/js/jquery.fitvids.js"></script>
         <script src="public/js/jquery.nicescroll.min.js"></script>
-<!--        <script src="public/js/lightbox.min.js"></script>-->
+        <script src="public/js/lightbox.min.js"></script>
         <script src="public/js/count-to.js"></script>
         <script src="public/js/styleswitcher.js"></script>
 
-        <script src="public/js/script.js"></script>
+        <script src="public/js/script.js"></script>-->
         
         
 
