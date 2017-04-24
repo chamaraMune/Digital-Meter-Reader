@@ -88,10 +88,13 @@
                 top: 30%;
                 left: 50%;
                 margin-left: -400px; 
-                margin-top: -40px; 
+                margin-top: -40px;
+         }
+         
+         .modal-content{width :80%;height: 80%;}
                 
                
-         }
+         
          
          
        </style>

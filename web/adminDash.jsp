@@ -43,15 +43,16 @@
                     <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
-                        <li><a href="index.jsp"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="index.jsp">Log out</a></li>
                     </ul>
                     
                 
                 
                 </div>
             </div>
-
+            
+            
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -63,7 +64,7 @@
 				
 					
                     <li>
-                        <a  href="HomeServlet"><i class="fa fa-dashboard fa-3x"></i> Home</a>
+                        <a  href="AdminHomePage"><i class="fa fa-dashboard fa-3x"></i> Home</a>
                     </li>
                       <li>
                         <a  href="ui.jsp"><i class="fa fa-desktop fa-3x"></i> UI Elements</a>
