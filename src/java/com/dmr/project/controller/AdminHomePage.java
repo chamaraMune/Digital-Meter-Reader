@@ -12,16 +12,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.dmr.project.model.User;
-import com.dmr.project.dao.UserDao;
-import com.dmr.project.dao.DBTest;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author chamara
  */
-public class LoginHandler extends HttpServlet {
+public class AdminHomePage extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,45 +30,10 @@ public class LoginHandler extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        RequestDispatcher rd = request.getRequestDispatcher("/adminHome.jsp");
+        rd.include(request, response);
         
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        System.out.println("Username : "+username+" password : "+ password);
-        
-//        Creating user object for user who is intending to login
-        User loggingUser = new User();
-        loggingUser.setPassword(password);
-        loggingUser.setUsername(username);
-        
-//        Check whether input creditionals are valid or not
-        boolean isValid = UserDao.getLogUserValidate(loggingUser);
-        System.out.println("Here :"+isValid);
-        if(isValid)
-        {
-            
-            if(loggingUser.getUsername().equals("admin")){
-                HttpSession session = request.getSession();
-                session.setAttribute("loggedUsername", loggingUser.getUsername());
-                response.sendRedirect("AdminHomePage");
-            }
-            else{
-                HttpSession session = request.getSession();
-                session.setAttribute("loggedUsername",loggingUser.getUsername());
-                response.sendRedirect("HomeServlet");
-            }
-
-        }
-        else
-        {
-            request.setAttribute("failmsg", "Username or password incorrect! Please try again");
-            RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-            rd.forward(request, response);
-        }
-        
-        
-        
-//       RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-//       rd.include(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

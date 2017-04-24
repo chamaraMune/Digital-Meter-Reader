@@ -75,13 +75,13 @@
                 </div>
             </div>
             <div class="row">
-               <div class="col-md-5">
+               <div class="col-md-4">
                    <div class="about-img">
                        <img src="public/images/corporate1.jpg" class="img-responsive" alt="About images">
 
                    </div>
                </div>
-               <div class="col-md-7">
+               <div class="col-md-8">
                    <div class="about-text">
                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -254,6 +254,16 @@
             </div><!-- /.container -->
         </section>
         <!-- End Footer Section -->
+        
+        <%
+            String msg = (String) request.getAttribute("failmsg");
+        %>
+        <script lang="JavaScript" type="text/javascript">
+            var msg = "<%=msg%>";
+            if(msg !== 'null'){
+                alert(msg);
+            }
+        </script>
 
 
 
