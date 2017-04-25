@@ -23,14 +23,16 @@
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            
             <div class="navbar-header">
+                <a class="navbar-brand" href="userDash.html" style="text-align: center;font-size: 20px;background-color: #0088cc;float: right">Digital Meter Reader</a> 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="userDash.html">Digital Meter Reader</a> 
+<!--                <a class="navbar-brand" href="userDash.html" style="text-align: center;">Digital Meter Reader</a> -->
             </div>
             
             <%
@@ -66,19 +68,19 @@
                         <a  href="HomeServlet"><i class="fa fa-dashboard fa-3x"></i> Home</a>
                     </li>
                       <li>
-                        <a  href="ui.jsp"><i class="fa fa-desktop fa-3x"></i> UI Elements</a>
+                        <a  href="ui.jsp"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
                     </li>
                     <li>
-                        <a  href="tab_panel.jsp"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
+                        <a  href="tab_panel.jsp"><i class="fa fa-newspaper-o fa-3x"></i>Inquiry</a>
                     </li>
 						   <li  >
-                        <a  href="chart.jsp"><i class="fa fa-bar-chart-o fa-3x"></i> StatisticSs</a>
+                        <a  href="chart.jsp"><i class="fa fa-bar-chart-o fa-3x"></i> Statistics</a>
                     </li>	
                       <li>
-                        <a  href="table.jsp"><i class="fa fa-table fa-3x"></i> Table Examples</a>
+                        <a  href="table.jsp"><i class="fa fa-table fa-3x"></i> Notifications</a>
                     </li>
                     <li>
-                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i> Forms </a>
+                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Edit profile</a>
                     </li>
                     <li  >
                         <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Analytical</a>

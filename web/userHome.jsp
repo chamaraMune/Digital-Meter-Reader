@@ -19,5 +19,17 @@
     </head>
     <body>
         <%@include file="UserDash.jsp" %>
+        <div id ="page-wrapper">
+           <div id="page-inner"> 
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1>Hello Digital meter</h1>
+                </div>
+            </div>
+        </div>
+               </div>
+        </div>
     </body>
 </html>
