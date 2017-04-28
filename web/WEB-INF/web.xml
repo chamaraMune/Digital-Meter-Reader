@@ -16,6 +16,14 @@
         <servlet-name>AdminHomePage</servlet-name>
         <servlet-class>com.dmr.project.controller.AdminHomePage</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminDMRRequest</servlet-name>
+        <servlet-class>com.dmr.project.controller.AdminDMRRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestAcceptor</servlet-name>
+        <servlet-class>com.dmr.project.controller.RequestAcceptor</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
         <url-pattern>/LoginHandler</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>AdminHomePage</servlet-name>
         <url-pattern>/AdminHomePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminDMRRequest</servlet-name>
+        <url-pattern>/AdminDMRRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestAcceptor</servlet-name>
+        <url-pattern>/RequestAcceptor</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

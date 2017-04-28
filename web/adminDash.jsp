@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="userDash.html">Digital Meter Reader</a> 
+                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #0088cc;float: right">Digital Meter Reader</a> 
             </div>
             
             <%
@@ -67,12 +67,12 @@
                         <a  href="AdminHomePage"><i class="fa fa-dashboard fa-3x"></i> Home</a>
                     </li>
                       <li>
-                        <a  href="ui.jsp"><i class="fa fa-desktop fa-3x"></i> UI Elements</a>
+                        <a  href="AdminDMRRequest"><i class="fa fa-key fa-3x"></i>DMR Requests</a>
                     </li>
                     <li>
                         <a  href="tab_panel.jsp"><i class="fa fa-qrcode fa-3x"></i> Tabs & Panels</a>
                     </li>
-						   <li  >
+                    <li>
                         <a  href="chart.jsp"><i class="fa fa-bar-chart-o fa-3x"></i> StatisticSs</a>
                     </li>	
                       <li>

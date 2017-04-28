@@ -7,18 +7,24 @@ package com.dmr.project.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.dmr.project.service.RandomPassowrd;
+import com.dmr.project.model.RequestForm;
+import com.dmr.project.model.User;
 import com.dmr.project.dao.AdminHomeDao;
+import javax.servlet.RequestDispatcher;
+import com.dmr.project.service.PasswordHashingService;
+import com.dmr.project.dao.RequestFormDao;
+
 
 /**
  *
  * @author chamara
  */
-public class AdminHomePage extends HttpServlet {
+public class RequestAcceptor extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,15 +34,44 @@ public class AdminHomePage extends HttpServlet {
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
+     * 
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        int newRequests = AdminHomeDao.getCountRequests();
         
-        request.setAttribute("newRequests", newRequests);
-        RequestDispatcher rd = request.getRequestDispatcher("/adminHome.jsp");
+        int requestId = Integer.parseInt(request.getParameter("requestId"));
+        
+        /* Requested object data binded as correspoing request id*/
+        RequestForm form = RequestFormDao.getRequestFormDetails(requestId);
+        
+        /*
+            Password sholud be randomly generated. so RandomPasswordGenerator
+            class method is used for that. The generated password and username
+            send to requested user via email.
+        */
+        char[] pwArr = RandomPassowrd.getPassword();
+        /*
+            Generated password encrpted as SHA-256 hash function
+        */
+        String hashedpw = PasswordHashingService.getHashedPassword(pwArr);
+        
+        /*This is only until login is completed */
+        com.dmr.project.service.RecordSerive.passwordBackup(form.getFirstName(), new String(pwArr), hashedpw);
+        
+        /* After the request was accepted user will added to system. */
+        boolean isUeradded = RequestFormDao.addUserDMR(form, hashedpw,requestId);
+        
+        // userEmail variable are stored requested user's email for sending password and username.
+        String userEmail = form.getEmail();
+        int userMobile = form.getMobilenumber();
+        System.out.println("Email : "+ userEmail+" "+"MOBILE NUMBER :"+userMobile);
+        
+        
+        RequestDispatcher rd = request.getRequestDispatcher("AdminDMRRequest");
         rd.include(request, response);
+        
+        
+        
         
     }
 

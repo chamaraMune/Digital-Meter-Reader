@@ -145,7 +145,7 @@
                                                         
                                             <div class="form-group">
                                                 <label class="sr-only" for="form-national_id">National ID No</label>
-				                <input type="text" name="nationalId" placeholder="National ID No..." class="form-email form-control" id="form-email">
+                                                <input type="text" name="nationalId" placeholder="National ID No..." class="form-email form-control" id="form-email" required>
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-email">Email</label>
