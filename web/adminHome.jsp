@@ -15,11 +15,16 @@
         <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css" type="text/css">
         <!--Responsive CSS file-->
         <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
-        <title>Home page</title>
+        <title>Admin Home</title>
     </head>
     <body>
         <%@include file="adminDash.jsp" %>
         
+        
+        <%
+            int requestCount = (int) request.getAttribute("newRequests");
+            
+        %>
         <!--Page content start from here-->
         <div id="page-wrapper">
             <div id="page-inner">
@@ -28,11 +33,11 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
                             <span class="icon-box bg-color-red set-icon">
-                                <i class="fa fa-envelope-o"></i>
+                                <i class="fa fa-key"></i>
                             </span>
                             <div class="text-box" >
-                                <p class="main-text">120 New</p>
-                                <p class="text-muted">Messages</p>
+                                <p class="main-text"><%=requestCount%> New</p>
+                                <p class="text-muted">DMR Requests</p>
                             </div>
                         </div>
 		    </div>
