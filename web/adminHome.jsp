@@ -22,7 +22,7 @@
         
         
         <%
-            int requestCount = (int) request.getAttribute("newRequests");
+            Object requestCount =  request.getAttribute("newRequests");
             
         %>
         <!--Page content start from here-->
