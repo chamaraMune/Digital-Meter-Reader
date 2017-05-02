@@ -56,10 +56,10 @@ public class RequestAcceptor extends HttpServlet {
         String hashedpw = PasswordHashingService.getHashedPassword(pwArr);
         
         /*This is only until login is completed */
-        com.dmr.project.service.RecordSerive.passwordBackup(form.getFirstName(), new String(pwArr), hashedpw);
+//        com.dmr.project.service.RecordSerive.passwordBackup(form.getFirstName(), new String(pwArr), hashedpw);
         
         /* After the request was accepted user will added to system. */
-        boolean isUeradded = RequestFormDao.addUserDMR(form, hashedpw,requestId);
+        boolean isadd = RequestFormDao.addUserDMR(form, hashedpw,requestId);
         
         // userEmail variable are stored requested user's email for sending password and username.
         String userEmail = form.getEmail();
