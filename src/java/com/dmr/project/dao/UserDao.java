@@ -30,7 +30,7 @@ public class UserDao {
         try
         {
             connection = DBConnection.connect();
-            String query = "SELECT username,password FROM logging_table WHERE username = ? AND password = ?";
+            String query = "SELECT username,password FROM dmr_user WHERE username = ? AND password = ?";
                             
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setString(1, username);
