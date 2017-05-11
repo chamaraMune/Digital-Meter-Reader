@@ -18,6 +18,7 @@ import com.dmr.project.dao.AdminHomeDao;
 import javax.servlet.RequestDispatcher;
 import com.dmr.project.service.PasswordHashingService;
 import com.dmr.project.dao.RequestFormDao;
+import com.dmr.project.service.EmailService;
 
 
 /**
@@ -49,6 +50,7 @@ public class RequestAcceptor extends HttpServlet {
             class method is used for that. The generated password and username
             send to requested user via email.
         */
+        String username = form.getNationalId();
         char[] pwArr = RandomPassowrd.getPassword();
         /*
             Generated password encrpted as SHA-256 hash function
@@ -64,7 +66,10 @@ public class RequestAcceptor extends HttpServlet {
         // userEmail variable are stored requested user's email for sending password and username.
         String userEmail = form.getEmail();
         int userMobile = form.getMobilenumber();
-        System.out.println("Email : "+ userEmail+" "+"MOBILE NUMBER :"+userMobile);
+//        System.out.println("IS ADD VARIABLE :"+isadd);
+        
+        /* Email sending method is called here */
+        EmailService.SendUsernamePassword(userEmail, username, pwArr);
         
         
         RequestDispatcher rd = request.getRequestDispatcher("AdminDMRRequest");
