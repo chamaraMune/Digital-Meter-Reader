@@ -5,10 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-      <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Bootstrap Admin Template : Binary Admin</title>
 	<!-- BOOTSTRAP STYLES-->
@@ -19,20 +19,24 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
- </head>
+
+   
+</head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px"> 
+            <div class="navbar-header"  >
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #0088cc;float: right">Digital Meter Reader</a> 
-            </div>
-            
+                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #EECD47; float: right; width: 260px; height: 60px">Digital Meter Reader</a>
+                
+            </div>         
+            	
             <%
                 
                 String loggeduser = (String)session.getAttribute("loggedUsername");
@@ -46,45 +50,44 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Edit Profile</a></li>
                         <li><a href="index.jsp">Log out</a></li>
-                    </ul>
-                    
-                
-                
+                    </ul>           
                 </div>
             </div>
             
             
+            
         </nav>   
-           <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
+           <!-- /. NAV TOP LEFT  -->
+           <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
+               <div class="sidebar-collapse" >
+                <ul class="nav" id="main-menu" >
 <!--				<li class="text-center">
                     <img src="assets/img/find_user.png" class="user-image img-responsive"/>
 					</li>-->
 				
 					
                     <li>
-                        <a  href="AdminHomePage"><i class="fa fa-dashboard fa-3x"></i> Home</a>
-                    </li>
-                      <li>
-                        <a  href="AdminDMRRequest"><i class="fa fa-key fa-3x"></i>DMR Requests</a>
+                        <a  href="AdminHomePage" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                     <li>
-                        <a  href="tab_panel.jsp"><i class="fa fa-envelope-o fa-3x"></i>Notifications</a>
+                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-user fa-3x"></i>User Registration</a>
                     </li>
                     <li>
-                        <a  href="chart.jsp"><i class="fa fa-bar-chart-o fa-3x"></i> StatisticSs</a>
+                        <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-envelope-square fa-3x"></i>DMR Requests</a>
+                    </li>
+                    <li>
+                        <a  href="tab_panel.jsp" style="background-color: #145D8E;"><i class="fa fa-bell-o fa-3x"></i>Notifications</a>
+                    </li>
+                    <li>
+                        <a  href="chart.jsp" style="background-color: #145D8E;"><i class="fa fa-bar-chart fa-3x"></i>Visual Analytics</a>
                     </li>	
-                      <li>
-                        <a  href="table.jsp"><i class="fa fa-table fa-3x"></i> Table Examples</a>
-                    </li>
                     <li>
-                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i> Forms </a>
+                        <a  href="table.jsp" style="background-color: #145D8E;"><i class="fa fa-send fa-3x"></i>Send SMS</a>
                     </li>
-                    <li  >
-                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Analytical</a>
-                    </li>
+                    
+                    <!--li>
+                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-edit fa-3x"></i>Analytical</a>
+                    </li-->
                     
 					
 					                   

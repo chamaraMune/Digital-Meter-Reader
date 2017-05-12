@@ -32,7 +32,7 @@ public class DBConnection {
 //        Connection parameters
         String url = "jdbc:mysql://localhost:3306/dmr";
         String username = "root";
-        String password = "root";
+        String password = "";
             
         try {
             //            Establishing connection
