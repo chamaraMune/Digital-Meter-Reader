@@ -16,6 +16,7 @@ import com.dmr.project.model.User;
 import com.dmr.project.dao.UserDao;
 import com.dmr.project.dao.DBTest;
 import javax.servlet.http.HttpSession;
+import com.dmr.project.service.PasswordHashingService;
 
 /**
  *
@@ -38,6 +39,8 @@ public class LoginHandler extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         System.out.println("Username : "+username+" password : "+ password);
+        password = PasswordHashingService.getHashedPassword(password.toCharArray());
+        System.out.println("Hashed password"+password);
         
 //        Creating user object for user who is intending to login
         User loggingUser = new User();
