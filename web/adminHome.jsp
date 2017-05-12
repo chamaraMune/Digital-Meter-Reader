@@ -26,28 +26,30 @@
             
         %>
         <!--Page content start from here-->
-        <div id="page-wrapper">
+        <div id="page-wrapper" style="margin-top: 50px">
             <div id="page-inner">
                 <div class="row">
-                    <!--Messages box--> 
+                    
+                <!-- DMR Request-->
+                
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
-                            <span class="icon-box bg-color-red set-icon">
-                                <i class="fa fa-key"></i>
+                            <span class="icon-box bg-color-brown set-icon">
+                                <i class="fa fa-envelope-square"></i>
                             </span>
                             <div class="text-box" >
                                 <p class="main-text"><%=requestCount%> New</p>
-                                <p class="text-muted">DMR Requests</p>
+                                <p class="text-muted">DMR Request</p>
                             </div>
                         </div>
 		    </div>
-                
+                             
                 
                 <!--Remaining tasks-->
                 <div class="col-md-3 col-sm-6 col-xs-6">           
                     <div class="panel panel-back noti-box">
                         <span class="icon-box bg-color-green set-icon">
-                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-check-square"></i>
                         </span>
                         <div class="text-box" >
                             <p class="main-text">30 Tasks</p>
@@ -67,15 +69,17 @@
                             </div>
                         </div>
                     </div>
+                <!-- Orders-->
+                    <!-- DMR Request-->
                 
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
                             <span class="icon-box bg-color-brown set-icon">
-                                <i class="fa fa-rocket"></i>
+                                <i class="fa fa-shopping-cart"></i>
                             </span>
                             <div class="text-box" >
-                                <p class="main-text">3 Orders</p>
-                                <p class="text-muted">Pending</p>
+                                <p class="main-text">4 New</p>
+                                <p class="text-muted">Orders</p>
                             </div>
                         </div>
 		    </div>
