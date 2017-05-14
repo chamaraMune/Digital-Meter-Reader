@@ -19,13 +19,14 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
 
    
 </head>
 <body>
-    <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px"> 
-            <div class="navbar-header"  >
+    <div id="wrapper" style="background-color: #145D8E;">
+        <nav class="navbar navbar-default navbar-static-top " role="navigation" style="margin-bottom: 0; background-color: #145D8E;"> 
+            <div class="navbar-header"   style="position: fixed;">
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -59,8 +60,8 @@
         </nav>   
            <!-- /. NAV TOP LEFT  -->
            <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
-               <div class="sidebar-collapse" >
-                <ul class="nav" id="main-menu" >
+               <div class="sidebar-collapse" style="background-color: white;">
+                   <ul class="nav" id="main-menu" style="">
 <!--				<li class="text-center">
                     <img src="assets/img/find_user.png" class="user-image img-responsive"/>
 					</li>-->
@@ -101,7 +102,7 @@
         <!-- /. NAV SIDE  -->
         
          <!-- /. PAGE WRAPPER  -->
-        </div>
+<!--        </div>-->
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
