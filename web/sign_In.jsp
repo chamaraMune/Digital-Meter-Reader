@@ -66,6 +66,14 @@
         <link rel="apple-touch-icon-precomposed" href="public/loginfroms/ico/apple-touch-icon-57-precomposed.png">
         
         <!--Ending of linking css files corresponding to login form and request form-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            span{
+                font-family: sans-serif;
+                color : #1a237e;
+                display: none;
+            }
+        </style>
 
     </head>
 
@@ -131,29 +139,32 @@
 	                            <div class="form-bottom">
 				        <form role="form" action="RequestFormHandling" method="post" class="registration-form">
 				            <div class="form-group">
+                                                <!--<span>First name</span>-->
 				                <label class="sr-only" for="form-first-name">First name</label>
 				                <input type="text" name="firstname" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                                                
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-last-name">Last name</label>
-				                <input type="text" name="lastname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                                                <input type="text" name="lastname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
 				            </div>
                                             <div class="form-group">
+<!--                                                <span>Address</span>-->
 				                <label class="sr-only" for="form-address">Address</label>
-				                <input type="text" name="address" placeholder="Address..." class="form-email form-control" id="form-email">
+				                <input type="text" name="address" placeholder="Address..." class="form-email form-control" id="form-address">
 				            </div>
                                                         
                                             <div class="form-group">
                                                 <label class="sr-only" for="form-national_id">National ID No</label>
-                                                <input type="text" name="nationalId" placeholder="National ID No..." class="form-email form-control" id="form-email" required>
+                                                <input type="text" name="nationalId" placeholder="National ID No..." class="form-email form-control" id="form-nationalId">
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-email">Email</label>
-                                                <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                                <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email" required>
 				            </div>
                                             <div class="form-group">
 				                <label class="sr-only" for="form-mobilenumber">Mobile Number</label>
-                                                <input type="text" name="mobilenumber" placeholder="Mobile No..." class="form-email form-control" id="form-email">
+                                                <input type="text" name="mobilenumber" placeholder="Mobile No..." class="form-email form-control" id="form-email" required>
 				            </div>
 				            <div class="form-group">
 				                <label class="sr-only" for="form-email">Electricity Account No</label>
@@ -170,10 +181,18 @@
                                 </div>
                         </div>
                         <!--Ending request form-->
-                    </div>
+<!--                    </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+        <script>
+//        $(document).ready(function(){
+//            $("#form-address").focus(function(){
+//                $("span").css("display", "inline").fadeOut(10000);
+//                
+//            });
+//        });
+        </script>
                         
 
         
