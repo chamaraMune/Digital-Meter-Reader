@@ -54,7 +54,9 @@
             <div class="overlay">
                 <div class="container">
                     <div class="intro-text">
-                        <h1>Welcome To The <span>Digital Meter Reader</span></h1>
+                        <div  style="opacity: 1;">
+                            <h1>Welcome To The <span>Digital Meter Reader</span></h1>
+                        </div>
                         <p>Get aware of your Electricity bill <br> Anywhere Anytime</p>
                         <a href="#feature" class="page-scroll btn btn-primary">Read More</a>
                     </div>

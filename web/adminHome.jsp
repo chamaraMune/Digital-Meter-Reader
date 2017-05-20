@@ -35,7 +35,7 @@
                 <div class="row">
                     
                 <!-- DMR Request-->
-<!--                
+                
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
                             <span class="icon-box bg-color-brown set-icon">
@@ -46,8 +46,8 @@
                                 <p class="text-muted">DMR Request</p>
                             </div>
                         </div>
-		    </div>-->
-                    <div class="col-md-3 col-sm-12 col-xs-12">                       
+		    </div>
+<!--                    <div class="col-md-3 col-sm-12 col-xs-12">                       
                     <div class="panel panel-primary text-center no-boder bg-color-green">
                         <div class="panel-body">
                             <i class="fa fa-envelope-square fa-5x"></i>
@@ -58,7 +58,7 @@
                             
                         </div>
                     </div>
-                    </div>
+                    </div>-->
                              
                 
                 <!--Remaining tasks-->
