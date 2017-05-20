@@ -19,7 +19,7 @@
     </head>
     <body>
         <%@include file="UserDash.jsp" %>
-        <div id ="page-wrapper">
+        <div id ="page-wrapper" style="margin-top: 50px">
            <div id="page-inner"> 
         
         <div class="container">
