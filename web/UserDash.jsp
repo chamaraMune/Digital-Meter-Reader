@@ -10,7 +10,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Digital Meter Reader</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -22,10 +22,10 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px">
             
             <div class="navbar-header">
-                <a class="navbar-brand" href="userDash.html" style="text-align: center;font-size: 20px;background-color: #0088cc;float: right">Digital Meter Reader</a> 
+                <a class="navbar-brand" href="userDash.html" style="text-align: center;font-size: 20px;background-color: #EECD47;float: right; width: 260px; height: 60px">Digital Meter Reader</a> 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -56,35 +56,38 @@
 
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+                <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+                    <!--img src="assets/img/find_user.png" class="user-image img-responsive"/-->
 					</li>
 				
 					
                     <li>
-                        <a  href="HomeServlet"><i class="fa fa-dashboard fa-3x"></i> Home</a>
+                        <a  href="HomeServlet" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                       <li>
+
                         <a  href="CurrentUsageServlet"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
+
                     </li>
+                    
+			<li>
+                        <a  href="chart.jsp" style="background-color: #145D8E  ;"><i class="fa fa-history fa-3x"></i>Usage History</a>
+                        </li>                    
                     <li>
-                        <a  href="tab_panel.jsp"><i class="fa fa-newspaper-o fa-3x"></i>Inquiry</a>
-                    </li>
-						   <li  >
-                        <a  href="chart.jsp"><i class="fa fa-bar-chart-o fa-3x"></i> Statistics</a>
-                    </li>	
-                      <li>
-                        <a  href="table.jsp"><i class="fa fa-table fa-3x"></i> Notifications</a>
-                    </li>
-                    <li>
-                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Edit profile</a>
-                    </li>
-                    <li  >
-                        <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Analytical</a>
-                    </li>
+                        <a  href="tab_panel.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
+                    	
+                      <!--li>
+                        <a  href="table.jsp" style="background-color: #145D8E  ;"><i class="fa fa-table fa-3x"></i> Notifications</a>
+                    </li-->
+                    <!--li>
+                        <a  href="form.jsp" style="background-color: #145D8E  ;"><i class="fa fa-edit fa-3x"></i>Edit profile</a>
+                    </li-->
+                    <!--li  >
+                        <a  href="form.jsp" style="background-color: #145D8E  ;"><i class="fa fa-edit fa-3x"></i>Analytical</a>
+                    </li-->
                     
 					
 					                   

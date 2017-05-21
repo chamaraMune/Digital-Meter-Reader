@@ -170,14 +170,18 @@
                             <div class="form-bottom">
                                 <form role="form" action="LoginHandler" method="post" class="login-form">
 <!--                                        username input field in login form-->
+
 				        <div class="form-group">
+                                            
 				            <label class="sr-only" for="form-username">Username</label>
-                                            <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username" >
+                                            <input type="text" name="username" placeholder="Username..." class="form-username form-control" 
+                                                   id="form-username" required pattern="^[a-zA-Z0-9]*$">
 				        </div>
 <!--                                        password input field in login form        -->
 				        <div class="form-group">
 				            <label class="sr-only" for="form-password">Password</label>
-                                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" >
+                                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" 
+                                                   id="form-password" required pattern="^[a-zA-Z0-9]*$">
 				        </div>
 <!--                                        Submit button in login form-->
                                         <button type="submit" class="btn" style="background-color:#5368C8;">Sign in!</button>
