@@ -71,7 +71,7 @@
         
         <style>
             .modal-header, h4, .close {
-            background-color: #5368C8;
+            background-color:#140E91;
             color:white !important;
             text-align: center;
             font-size: 30px;
@@ -118,7 +118,7 @@
 
         <header class="clearfix">
             <!-- Start  Logo & Naviagtion  -->
-            <div class="navbar navbar-default navbar-top">
+            <div class="navbar navbar-default navbar-top" style="background-color: #E9D2AF;">
                 <div class="container">
                     <div class="navbar-header">
                         <!-- Stat Toggle Nav Link For Mobiles -->
@@ -126,7 +126,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
-                        <a class="navbar-brand" href="index.jsp">Digital Meter Reader</a>
+                        <a class="navbar-brand" href="index.jsp" style="font-family:Lucida Sans Unicode;  "><font color="#000000" style="margin-left: -90px; margin-bottom:30px;">Digital Meter Reader</font></a>
                     </div>
                     <div class="navbar-collapse collapse">
 
@@ -158,7 +158,7 @@
                 <div class="modal-content">
                      <div class="modal-header" style="padding:35px 50px; margin-bottom:0px;">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                        <h4><span class="glyphicon glyphicon-lock"></span><font color="#DCE3E1">Login</font></h4>
                     </div>
                     
                         <div class="form-box">
