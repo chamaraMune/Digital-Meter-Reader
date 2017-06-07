@@ -40,6 +40,18 @@
 
 
         <script src="public/js/modernizrr.js"></script>
+        <style>
+            h1{
+                color: black;
+                font-family: Lucida Sans Unicode;
+                font-size: 30px;
+            }
+            p{
+                font-family: Lucida Sans Unicode;
+                color: black;
+            }
+        </style>
+        
 
 
     </head>
@@ -51,13 +63,13 @@
         
         <!-- Start Header Section -->
         <div class="banner">
-            <div class="overlay">
+            <div class="overlay" style="background-image: url(public/images/pic2.jpg);width:100%;height:700px;background-repeat:no-repeat; font-family: Lucida Sans Unicode;">
                 <div class="container">
                     <div class="intro-text">
-                        <div  style="opacity: 1;">
-                            <h1>Welcome To The <span>Digital Meter Reader</span></h1>
-                        </div>
-                        <p>Get aware of your Electricity bill <br> Anywhere Anytime</p>
+
+                        <h1>Welcome To The Digital Meter Reader</h1>
+                        <p style="font-family: Lucida Sans Unicode; color: black;">Get aware of your Electricity bill <br> Anywhere Anytime</p>
+
                         <a href="#feature" class="page-scroll btn btn-primary">Read More</a>
                     </div>
                 </div>
@@ -67,46 +79,34 @@
 
 
         <!-- Start About Us Section -->
-    <section id="about-section" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    <section id="about-section" class="about-section" >
+        <div class="row">
+                <div class="col-md-12" id ="feature">
                     <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
-                        <h2>About DMR</h2>
+                        <h2  style="font-family: Lucida Sans Unicode;">About Digital Meter Reader</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-               <div class="col-md-4">
-                   <div class="about-img">
-                       <img src="public/images/corporate1.jpg" class="img-responsive" alt="About images">
-
-                   </div>
-               </div>
-               <div class="col-md-8">
-                   <div class="about-text">
-                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  <div class="col-md-12 ">
+                      <div class="about-text" style="margin-left: 3%">
+                       <p>Electricity is a basic need of humans now a days. The main sources of generating electricity in Sri Lanka are thermal power and hydroelectricity. According to the tariffs and charges placed by the Ceylon Electricity Board we have to pay for our electricity consumption monthly. Currently whole process takes place manually.</p>
+                       <p>Digital Meter Reader is a web based system that works along with a hardware component which is a digital meter. Through this system customer can get aware of the electricity consumption and payment details at any time anywhere. User is given the opportunity to activate notifications to inform sudden power cuts and consumptions details via SMS. Most important feature of web site is it can notify you when you exceed the normal consumption rate and avoid increasing your electricity bill.</p>
                    </div>
 
                    <div class="about-list">
-                       <h4>Some important Feature</h4>
+                       <div class="col-md-8" style="margin-left:15%; margin-top:5%;font-family: Lucida Sans Unicode;">
+                           <h4 style="background-color: #082B42">What You Can Get Through Digital Meter Reader</h4>
+                           <div class="col-md-9" style="margin-left: 20%; font-family: Lucida Sans Unicode; margin-top: 6% ">
                        <ul>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                       </ul>
-
-                       <h4>More Feature</h4>
-                       <ul>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing.</li>
-                           <li><i class="fa fa-check-square"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan.</li>
-                           <li><i class="fa fa-check-square"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                       </ul>
+                           <li style="text-align: left "><i class="fa fa-check-square"></i>View your electricity bill anywhere at anytime</li>
+                           <li style="text-align: left"><i class="fa fa-check-square"></i>Instant updates of the power consumption</li>
+                           <li style="text-align: left"><i class="fa fa-check-square"></i>SMS alert system that notify you on sudden power cuts and repairs in certain area</li>
+                           <li style="text-align: left"><i class="fa fa-check-square"></i>Notify you when you exceed normal power consumption level</li>
+                           <li style="text-align: left"><i class="fa fa-check-square"></i>Visual analysis of comparison of power usage in previous months</li>
+                           <li style="text-align: left"><i class="fa fa-check-square"></i>Request for a Digital Meter</li>
+                       </ul>                      
+                       </div>
                    </div>
 
                </div>
@@ -119,171 +119,87 @@
 
   <!-- Start Service Section -->
         <section id="service-section">
-            <div class="container">
+            <div class="container" style="margin-top:-5%;font-family: Lucida Sans Unicode;font-weight: 200;">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay="50ms">
-                            <h2>DMR Features</h2>
-                            <p>Digital Meter Reader provide handy nice Features</p>
+                            <h2>Electricity Saving Tips</h2>                            
                         </div>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="services-post">
-                            <a href="#"><i class="fa fa-skyatlas"></i></a>
-                                <h2>RESPONSIVE DESIGN</h2>
-                                    <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                            <a href="#"><i class="fa fa-lightbulb-o"></i></a>
+                            <p><b>Remove Filament bulbs and Switch to CFLs</b></p>
                         </div>
                         
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="services-post">
-                            <a href="#"><i class="fa fa-magic"></i></a>
-				<h2>RESPONSIVE DESIGN</h2>
-                                    <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                            <a href="#"><i class="fa fa-star-o"></i></a>
+                            <p><b>Buy Energy Star Appliances When You Buy New Electricity Appliances</b></p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                
+                
+                    <div class="col-md-4">
                         <div class="services-post">
-                            <a href="#"><i class="fa fa-gift"></i></a>
-                            <h2>RESPONSIVE DESIGN</h2>
-                            <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                            <a href="#"><i class="fa fa-sun-o"></i></a>
+                            <p><b>Make Your House More Open To Sunlight</b></p>
 			</div>
                     </div>
-                    <div class="col-md-3">
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="services-post">
-                            <a href="#"><i class="fa fa-diamond"></i></a>
-                            <h2>RESPONSIVE DESIGN</h2>
-                            <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                            <a href="#"><i class="fa fa-power-off"></i></a>
+                            <p><b>Turn Off All The Lights And Electronic Appliances When Not In Use</b></p>
 			</div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="services-post">
-                            <a href="#"><i class="fa fa-wordpress"></i></a>
-				<h2>RESPONSIVE DESIGN</h2>
-				<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
+                            <a href="#"><i class="fa fa-users"></i></a>
+                            <p><b>Iron Your Clothes For The Week At One Time</b></p>
+			</div>
+                    </div>
+                   <div class="col-md-4">
+                        <div class="services-post">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                            <p><b>Service Your Air Conditioner</b></p>
 			</div>
                     </div>
                     
-                    <div class="col-md-3">
-                        <div class="services-post">
-                            <a href="#"><i class="fa fa-forumbee"></i></a>
-                            <h2>RESPONSIVE DESIGN</h2>
-                            <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
-			</div>
-                    </div>
                     
-                    <div class="col-md-3">
-                        <div class="services-post">
-                            <a href="#"><i class="fa fa-bicycle"></i></a>
-				<h2>RESPONSIVE DESIGN</h2>
-				<p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
-			</div>
-                        
-                    </div>
-                    <div class="col-md-3">
-                        <div class="services-post">
-                            <a href="#"><i class="fa fa-foursquare"></i></a>
-                            <h2>RESPONSIVE DESIGN</h2>
-                            <p>Donec odio. Quisque volutpat mattis eros. Nullam malesuada </p>
-			</div>
-                    </div>
+                    
+                    
+                    
                 </div>
             </div>
         </section>
 
+<script>
+    $(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1200, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+
+
 
 
         <!-- Start Footer Section -->
-        <section id="footer-section" class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Office Address</span>
-                            </h3>
-                        </div>
-
-                        <div class="footer-address">
-                            <ul>
-                                <li class="footer-contact"><i class="fa fa-home"></i>123, Second Street name, Address</li>
-                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@domain.com</a></li>
-                                <li class="footer-contact"><i class="fa fa-phone"></i>+1 (123) 456-7890</li>
-                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.domain.com</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3 -->
-
-
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Latest Tweet</span>
-                            </h3>
-                        </div>
-
-                        <div class="latest-tweet">
-                            <div class="media">
-                                <div class="media-left">
-                                    <i class="fa fa-twitter fa-2x media-object"></i>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">About 15 days ago</h4>
-                                    <p>Finally #tutsplus start a tutorial on A Beginner’s Guide to Using #joomla . Check it out here http://t.co/i6S4zeW8Z0</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-3 -->
-
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Stay With us</span>
-                            </h3>
-                        </div>
-                        <div class="subscription">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.row -->
-            </div><!-- /.container -->
-        </section>
-        <!-- End Footer Section -->
-        
-        <%
-            String msg = (String) request.getAttribute("failmsg");
-        %>
-        <script lang="JavaScript" type="text/javascript">
-            var msg = "<%=msg%>";
-            if(msg !== 'null'){
-                alert(msg);
-            }
-        </script>
-
-
-
-
-
-       <!-- Sulfur JS File -->
-<!--        <script src="public/js/jquery-2.1.3.min.js"></script>
-        <script src="public/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="public/bootstrap/js/bootstrap.min.js"></script>
-        <script src="public/js/owl.carousel.min.js"></script>
-        <script src="public/js/jquery.appear.js"></script>
-        <script src="public/js/jquery.fitvids.js"></script>
-        <script src="public/js/jquery.nicescroll.min.js"></script>
-        <script src="public/js/lightbox.min.js"></script>
-        <script src="public/js/count-to.js"></script>
-        <script src="public/js/styleswitcher.js"></script>
-
-        <script src="public/js/script.js"></script>-->
         
         
 
