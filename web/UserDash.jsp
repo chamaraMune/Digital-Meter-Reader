@@ -46,7 +46,7 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
-                        <li><a href="index.jsp"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
+                        <li><a href="LogoutHandler"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
                     </ul>
                     
                 

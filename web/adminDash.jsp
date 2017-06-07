@@ -50,7 +50,7 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#">Edit Profile</a></li>
-                        <li><a href="index.jsp">Log out</a></li>
+                        <li><a href="LogoutHandler">Log out</a></li>
                     </ul>           
                 </div>
             </div>
