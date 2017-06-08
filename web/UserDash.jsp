@@ -42,7 +42,7 @@
             %>
             <div style="color: white;padding: 15px 50px 5px 50px; float: right;font-size: 16px;">
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
+                    <button name="userId" id="userId" idclass="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
@@ -68,7 +68,7 @@
                         <a  href="HomeServlet" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                       <li>
-
+                                
                         <a  href="CurrentUsageServlet"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
 
                     </li>

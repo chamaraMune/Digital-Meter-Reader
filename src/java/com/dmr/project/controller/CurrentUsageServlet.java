@@ -5,13 +5,21 @@
  */
 package com.dmr.project.controller;
 
+import com.dmr.project.dao.TariffMethod;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.dmr.project.dao.Units;
+import javax.servlet.http.HttpSession;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import com.dmr.project.service.GetDoubleValue;
+import java.util.Date;
 
 /**
  *
@@ -29,10 +37,33 @@ public class CurrentUsageServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        RequestDispatcher rd = request.getRequestDispatcher("/userCurrentUsage.jsp");
-        rd.include(request, response);
+            throws ServletException, IOException, SQLException {
+            int meterId = 0;
+            double units = 0;
+            double bill = 0;
+            Date date = null;
+            String category = null;
+            String sessionId = null;
+            HttpSession session = request.getSession(true);
+            sessionId = (String)session.getAttribute("loggedUsername");// create session and get session atribute
+            Units unitObject = new Units();// create units object and using getMeter method get meterId for loged user 
+            meterId = unitObject.getMeter(sessionId);
+            ResultSet rs = unitObject.getUserUnits(meterId);// using meter id get category and current consumption
+            
+            while(rs.next()){// get current consumption units and category and calculate bill 
+                units = rs.getDouble("consumption_unit");
+                category = rs.getString("category");
+                date = rs.getDate("time");
+                double bill1 = new TariffMethod().selectMethod(units, category);
+                bill = new GetDoubleValue().getValue(bill1);
+            }
+            
+            response.setContentType("text/html;charset=UTF-8");//get attribute and dispatch to the jsp
+            request.setAttribute("units", units);
+            request.setAttribute("bill", bill);
+            request.setAttribute("date", date);
+            RequestDispatcher rd = request.getRequestDispatcher("/userCurrentUsage.jsp");
+            rd.include(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -47,7 +78,11 @@ public class CurrentUsageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(CurrentUsageServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -61,7 +96,11 @@ public class CurrentUsageServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(CurrentUsageServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**

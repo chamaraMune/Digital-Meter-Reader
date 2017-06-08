@@ -79,4 +79,45 @@ public class Units {
         }
         
     }
+    public int getMeter(String userId){//get meter id for user id and call getUserUnits function
+        ArrayList<UnitsDetails> list1 = null;
+        double bill;
+        int id = 0;
+        ResultSet rs2 = null;
+        String username = userId;
+        try{
+            Connection conn4 = connection.connect();
+            String sql = "SELECT meterId FROM dmr_user WHERE username = ?";
+            PreparedStatement statement = conn4.prepareStatement(sql);
+            statement.setString(1, username);
+            ResultSet rs = statement.executeQuery();
+            while(rs.next()){
+                id = rs.getInt("meterId");
+            }
+            //rs2 = getUserUnits(id);
+        }catch(Exception ex){
+            System.out.println("Exception "+ex);
+        }
+        return id;
+    }
+    
+    public ResultSet getUserUnits(int id){// get meter details for meter id
+        Connection conn5 = null;
+        int meterId = id;
+        ResultSet rs3 = null;
+        ArrayList<UnitsDetails> list2 = null;
+        try{
+            conn5 = connection.connect();
+            String sql = "select dmr_meter.category,dmr_reading2.consumption_unit, dmr_reading2.time from dmr_meter inner join dmr_reading2 on dmr_meter.meterId =? and dmr_reading2.meterID=?;";
+            PreparedStatement statement = conn5.prepareStatement(sql);
+            statement.setInt(1, meterId);
+            statement.setInt(2, meterId);
+            rs3 = statement.executeQuery();
+           
+        }catch(Exception ex){
+            System.out.println("Exception : "+ex);
+        }
+        return rs3;
+    }
+    
 }
