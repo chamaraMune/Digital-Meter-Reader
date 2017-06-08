@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px"> 
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px; background: #145D8E"> 
             <div class="navbar-header"  >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -56,7 +56,7 @@
             
         </nav>   
            <!-- /. NAV TOP LEFT  -->
-           <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
+           <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px;">
                <div class="sidebar-collapse" >
                 <ul class="nav" id="main-menu" >
 <!--				<li class="text-center">
@@ -83,9 +83,9 @@
                         <a  href="table.jsp" style="background-color: #145D8E;"><i class="fa fa-send fa-3x"></i>Send SMS</a>
                     </li>
                     
-                    <!--li>
-                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-edit fa-3x"></i>Analytical</a>
-                    </li-->
+                    <li>
+                        <a  href="form.jsp" style="background-color: #145D8E; height: 250px"></a>
+                    </li>
                     
 					
 					                   
