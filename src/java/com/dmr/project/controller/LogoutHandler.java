@@ -33,7 +33,9 @@ public class LogoutHandler extends HttpServlet {
             throws ServletException, IOException {
         RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
         HttpSession session = request.getSession();
+
         session.invalidate();
+
         rd.include(request, response);
         
     }
