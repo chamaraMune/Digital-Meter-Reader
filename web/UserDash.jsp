@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px">
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px; background: #145D8E">
             
             <div class="navbar-header">
                 <a class="navbar-brand" href="userDash.html" style="text-align: center;font-size: 20px;background-color: #EECD47;float: right; width: 260px; height: 60px">Digital Meter Reader</a> 
@@ -76,10 +76,13 @@
                         </li>                    
                     <li>
                         <a  href="tab_panel.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
-                    	
-                      <!--li>
+                    </li>	
+                      <li>
                         <a  href="table.jsp" style="background-color: #145D8E  ;"><i class="fa fa-table fa-3x"></i> Notifications</a>
-                    </li-->
+                    </li>
+                    <li>
+                        <a style="background-color: #145D8E; height: 300px"></a>
+                    </li>
                     <!--li>
                         <a  href="form.jsp" style="background-color: #145D8E  ;"><i class="fa fa-edit fa-3x"></i>Edit profile</a>
                     </li-->
