@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css" type="text/css">
         <!--Responsive CSS file-->
         <link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
         <title>Admin Home</title>
     </head>
     <body>
@@ -26,7 +30,7 @@
             
         %>
         <!--Page content start from here-->
-        <div id="page-wrapper" style="margin-top: 50px">
+        <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
                     
@@ -43,6 +47,18 @@
                             </div>
                         </div>
 		    </div>
+<!--                    <div class="col-md-3 col-sm-12 col-xs-12">                       
+                    <div class="panel panel-primary text-center no-boder bg-color-green">
+                        <div class="panel-body">
+                            <i class="fa fa-envelope-square fa-5x"></i>
+                            <h3><%=requestCount%></h3>
+                        </div>
+                        <div class="panel-footer back-footer-green">
+                           New DMR requests
+                            
+                        </div>
+                    </div>
+                    </div>-->
                              
                 
                 <!--Remaining tasks-->
@@ -83,7 +99,11 @@
                             </div>
                         </div>
 		    </div>
+                    
+
                 </div>
             </div>
+        </div>
+    </div>
     </body>
 </html>

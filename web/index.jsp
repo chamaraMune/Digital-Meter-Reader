@@ -66,8 +66,10 @@
             <div class="overlay" style="background-image: url(public/images/pic2.jpg);width:100%;height:700px;background-repeat:no-repeat; font-family: Lucida Sans Unicode;">
                 <div class="container">
                     <div class="intro-text">
+
                         <h1>Welcome To The Digital Meter Reader</h1>
                         <p style="font-family: Lucida Sans Unicode; color: black;">Get aware of your Electricity bill <br> Anywhere Anytime</p>
+
                         <a href="#feature" class="page-scroll btn btn-primary">Read More</a>
                     </div>
                 </div>

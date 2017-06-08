@@ -46,7 +46,7 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
-                        <li><a href="index.jsp"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
+                        <li><a href="LogoutHandler"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
                     </ul>
                     
                 
@@ -68,9 +68,11 @@
                         <a  href="HomeServlet" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                       <li>
-                        <a  href="ui.jsp" style="background-color: #145D8E  ;"><i class="fa fa-check-circle fa-3x"></i>Check Current Usage</a>
+
+                        <a  href="CurrentUsageServlet"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
+
                     </li>
-                    </li>
+                    
 			<li>
                         <a  href="chart.jsp" style="background-color: #145D8E  ;"><i class="fa fa-history fa-3x"></i>Usage History</a>
                         </li>                    
@@ -99,7 +101,7 @@
         <!-- /. NAV SIDE  -->
         
          <!-- /. PAGE WRAPPER  -->
-        </div>
+<!--        </div>-->
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
