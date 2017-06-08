@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.dmr.project.dao.AdminHomeDao;
 
+import com.dmr.project.dao.DummydataDao;
+
 /**
  *
  * @author chamara
@@ -33,6 +35,10 @@ public class AdminHomePage extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         int newRequests = AdminHomeDao.getCountRequests();
+        
+        /*Dummy data service*/
+//        DummydataDao.meterReadingDummyDataWriting(newRequests);
+        
         
         request.setAttribute("newRequests", newRequests);
         RequestDispatcher rd = request.getRequestDispatcher("/adminHome.jsp");

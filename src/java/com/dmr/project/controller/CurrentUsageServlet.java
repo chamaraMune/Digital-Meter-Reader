@@ -30,7 +30,8 @@ public class CurrentUsageServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        double currentUsage = 1001.99;
+        request.setAttribute("currenUsage", currentUsage);
         RequestDispatcher rd = request.getRequestDispatcher("/userCurrentUsage.jsp");
         rd.include(request, response);
     }

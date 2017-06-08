@@ -74,7 +74,7 @@
                     </li>
                     
 			<li>
-                        <a  href="chart.jsp" style="background-color: #145D8E  ;"><i class="fa fa-history fa-3x"></i>Usage History</a>
+                        <a  href="UsageHistoryServlet" style="background-color: #145D8E  ;"><i class="fa fa-history fa-3x"></i>Usage History</a>
                         </li>                    
                     <li>
                         <a  href="tab_panel.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
