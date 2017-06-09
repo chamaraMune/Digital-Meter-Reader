@@ -45,21 +45,23 @@
                                         <div class="col-sm-4" style="text-align: left">
                                             <h5>Current Units(kWh) :</h5>
                                         </div>
-                                        <div class="col-sm-3"><h5>52</h5></div>
+                                        <div class="col-sm-3"><h5><%= request.getAttribute("units") %></h5></div>
                                     </div>
                                     
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <h5>Current Bill(LKR) :</h5>
                                         </div>
-                                        <div class="col-sm-3"><h5><%=currentUsage%></h5></div>
+
+                                        <div class="col-sm-3"><h5><%= request.getAttribute("bill") %></h5></div>
+
                                     </div>
                                     
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <h5>Lately updated :</h5>
                                         </div> 
-                                        <div class="col-sm-5"><h5>2017-05-18 15:14:46</h5></div>
+                                        <div class="col-sm-5"><h5><%= request.getAttribute("date")%></h5></div>
                                     </div>
                                     
                                     <div class="row">
