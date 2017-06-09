@@ -7,7 +7,7 @@
 
 
 body {
-	font-family:Arial Rounded MT Bold,Helvetica Rounded,Arial,sans-serif;
+	font-family:Arial,Helvetica Rounded,Arial,sans-serif;
 	font-size: 16px;
     color: #111;
     line-height: 21px;
@@ -33,7 +33,7 @@ ul {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: #444;
     line-height: 1.5em;
@@ -68,7 +68,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Lucida Sans Unicode;", cursive, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 0;

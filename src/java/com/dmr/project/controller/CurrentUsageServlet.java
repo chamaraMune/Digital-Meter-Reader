@@ -37,6 +37,7 @@ public class CurrentUsageServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+
             throws ServletException, IOException, SQLException {
             int meterId = 0;
             double units = 0;
@@ -64,6 +65,8 @@ public class CurrentUsageServlet extends HttpServlet {
             request.setAttribute("date", date);
             RequestDispatcher rd = request.getRequestDispatcher("/userCurrentUsage.jsp");
             rd.include(request, response);
+
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

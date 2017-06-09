@@ -39,6 +39,9 @@
                                       
                                 <div class="panel-body" style="text-align: left;"> 
                                     <div class="row">
+                                        <%
+                                            Object currentUsage = (Object)request.getAttribute("currenUsage");
+                                        %>
                                         <div class="col-sm-4" style="text-align: left">
                                             <h5>Current Units(kWh) :</h5>
                                         </div>
@@ -49,7 +52,9 @@
                                         <div class="col-sm-4">
                                             <h5>Current Bill(LKR) :</h5>
                                         </div>
+
                                         <div class="col-sm-3"><h5><%= request.getAttribute("bill") %></h5></div>
+
                                     </div>
                                     
                                     <div class="row">
