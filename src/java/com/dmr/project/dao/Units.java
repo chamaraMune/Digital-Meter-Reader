@@ -87,7 +87,7 @@ public class Units {
         String username = userId;
         try{
             Connection conn4 = connection.connect();
-            String sql = "SELECT meterId FROM dmr_user WHERE username = ?";
+            String sql = "SELECT meterId FROM dmr_meter WHERE userId = ?";
             PreparedStatement statement = conn4.prepareStatement(sql);
             statement.setString(1, username);
             ResultSet rs = statement.executeQuery();
