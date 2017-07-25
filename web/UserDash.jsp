@@ -77,7 +77,7 @@
                         <a  href="UsageHistoryServlet" style="background-color: #145D8E  ;"><i class="fa fa-history fa-3x"></i>Usage History</a>
                         </li>                    
                     <li>
-                        <a  href="tab_panel.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
+                        <a  href="editProfile.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
                     	
                       <!--li>
                         <a  href="table.jsp" style="background-color: #145D8E  ;"><i class="fa fa-table fa-3x"></i> Notifications</a>
