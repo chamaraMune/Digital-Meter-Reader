@@ -83,7 +83,7 @@
                         <a  href="chart.jsp" style="background-color: #145D8E;"><i class="fa fa-bar-chart fa-3x"></i>Visual Analytics</a>
                     </li>	
                     <li>
-                        <a  href="table.jsp" style="background-color: #145D8E;"><i class="fa fa-send fa-3x"></i>Send SMS</a>
+                        <a  href="SendSMSPage" style="background-color: #145D8E;"><i class="fa fa-send fa-3x"></i>Send SMS</a>
                     </li>
                     
                     <!--li>
