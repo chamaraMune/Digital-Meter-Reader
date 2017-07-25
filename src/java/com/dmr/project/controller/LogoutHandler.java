@@ -36,6 +36,7 @@ public class LogoutHandler extends HttpServlet {
 
         session.invalidate();
 
+
         rd.include(request, response);
         
     }
