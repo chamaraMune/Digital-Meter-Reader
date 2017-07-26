@@ -19,20 +19,23 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; height:60px">
+    <div id="wrapper" style="background-color: #145D8E;">
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="margin-bottom: 0; background-color: #145D8E;">
             
             <div class="navbar-header">
-                <a class="navbar-brand" href="userDash.html" style="text-align: center;font-size: 20px;background-color: #EECD47;float: right; width: 260px; height: 60px">Digital Meter Reader</a> 
+                
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<!--                <a class="navbar-brand" href="userDash.html" style="text-align: center;">Digital Meter Reader</a> -->
+
+                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #EECD47; float: right; width: 260px; height: 60px">
+                    Digital Meter Reader</a>
             </div>
             
             <%
@@ -42,7 +45,7 @@
             %>
             <div style="color: white;padding: 15px 50px 5px 50px; float: right;font-size: 16px;">
                 <div class="dropdown">
-                    <button name="userId" id="userId" idclass="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
@@ -56,20 +59,15 @@
 
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
-            <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
-				<li class="text-center">
-                    <!--img src="assets/img/find_user.png" class="user-image img-responsive"/-->
-					</li>
-				
-					
+        <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px; background-color: #145D8E ">
+            <div class="sidebar-collapse" style="background-color: white;">
+                <ul class="nav" id="main-menu">		
                     <li>
                         <a  href="HomeServlet" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                       <li>
                                 
-                        <a  href="CurrentUsageServlet"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
+                        <a  href="CurrentUsageServlet" style="background-color: #145D8E  ;"><i class="fa fa-desktop fa-3x"></i> Current Usage</a>
 
                     </li>
                     
@@ -79,20 +77,6 @@
                     <li>
                         <a  href="editProfile.jsp" style="background-color: #145D8E  ;"><i class="fa fa-user fa-3x"></i>Update User Account</a>
                     	
-                      <!--li>
-                        <a  href="table.jsp" style="background-color: #145D8E  ;"><i class="fa fa-table fa-3x"></i> Notifications</a>
-                    </li-->
-                    <!--li>
-                        <a  href="form.jsp" style="background-color: #145D8E  ;"><i class="fa fa-edit fa-3x"></i>Edit profile</a>
-                    </li-->
-                    <!--li  >
-                        <a  href="form.jsp" style="background-color: #145D8E  ;"><i class="fa fa-edit fa-3x"></i>Analytical</a>
-                    </li-->
-                    
-					
-					                   
-
-                  	
                 </ul>
                
             </div>
