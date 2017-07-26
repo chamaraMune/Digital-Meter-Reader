@@ -47,33 +47,8 @@
                             </div>
                         </div>
 		    </div>
-<!--                    <div class="col-md-3 col-sm-12 col-xs-12">                       
-                    <div class="panel panel-primary text-center no-boder bg-color-green">
-                        <div class="panel-body">
-                            <i class="fa fa-envelope-square fa-5x"></i>
-                            <h3><%=requestCount%></h3>
-                        </div>
-                        <div class="panel-footer back-footer-green">
-                           New DMR requests
-                            
-                        </div>
-                    </div>
-                    </div>-->
-                             
-                
-                <!--Remaining tasks-->
-                <div class="col-md-3 col-sm-6 col-xs-6">           
-                    <div class="panel panel-back noti-box">
-                        <span class="icon-box bg-color-green set-icon">
-                            <i class="fa fa-check-square"></i>
-                        </span>
-                        <div class="text-box" >
-                            <p class="main-text">30 Tasks</p>
-                            <p class="text-muted">Remaining</p>
-                        </div>
-                    </div>
-                   </div>
-                <!--Notifications box-->
+
+                    <!--Notifications box-->         
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
                             <span class="icon-box bg-color-blue set-icon">
@@ -85,17 +60,29 @@
                             </div>
                         </div>
                     </div>
-                <!-- Orders-->
-                    <!-- DMR Request-->
+                                
+                <!--Remaining tasks-->
+                <div class="col-md-3 col-sm-6 col-xs-6">           
+                    <div class="panel panel-back noti-box">
+                        <span class="icon-box bg-color-green set-icon">
+                            <i class="fa fa-bar-chart"></i>
+                        </span>
+                        <div class="text-box" >
+                            <p class="main-text">Visual Analytics</p>
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                   </div>
                 
+                <!-- Orders-->
                     <div class="col-md-3 col-sm-6 col-xs-6">           
 			<div class="panel panel-back noti-box">
-                            <span class="icon-box bg-color-brown set-icon">
-                                <i class="fa fa-shopping-cart"></i>
+                            <span class="icon-box bg-color-red set-icon">
+                                <i class="fa fa-envelope-square"></i>
                             </span>
                             <div class="text-box" >
-                                <p class="main-text">4 New</p>
-                                <p class="text-muted">Orders</p>
+                                <p class="main-text">Send<br>SMS</p>
+                                <p class="text-muted"></p>
                             </div>
                         </div>
 		    </div>
