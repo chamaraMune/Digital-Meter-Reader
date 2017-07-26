@@ -71,11 +71,9 @@
                         <a  href="AdminHomePage" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                     <li>
-                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-user fa-3x"></i>User Registration</a>
+                        <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-user fa-3x"></i>User Registration</a>
                     </li>
-                    <li>
-                        <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-envelope-square fa-3x"></i>DMR Requests</a>
-                    </li>
+                    
                     <li>
                         <a  href="tab_panel.jsp" style="background-color: #145D8E;"><i class="fa fa-bell-o fa-3x"></i>Notifications</a>
                     </li>
