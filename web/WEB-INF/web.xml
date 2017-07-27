@@ -49,6 +49,22 @@
         <servlet-class>com.dmr.project.controller.TransformerHandler</servlet-class>
     </servlet>
     <servlet>
+
+        <servlet-name>NotificationPage</servlet-name>
+        <servlet-class>com.dmr.project.controller.NotificationPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewBillHandler</servlet-name>
+        <servlet-class>com.dmr.project.controller.NewBillHandler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Notificationpage</servlet-name>
+        <servlet-class>com.dmr.project.controller.Notificationpage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DataHandler</servlet-name>
+        <servlet-class>com.dmr.project.controller.DataHandler</servlet-class>
+
         <servlet-name>EditProfileLoading</servlet-name>
         <servlet-class>com.dmr.project.controller.EditProfileLoading</servlet-class>
     </servlet>
@@ -59,6 +75,7 @@
     <servlet>
         <servlet-name>UpdateUserProfile</servlet-name>
         <servlet-class>com.dmr.project.controller.UpdateUserProfile</servlet-class>
+
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
@@ -109,6 +126,22 @@
         <url-pattern>/TransformerHandler</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+
+        <servlet-name>NotificationPage</servlet-name>
+        <url-pattern>/NotificationPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewBillHandler</servlet-name>
+        <url-pattern>/NewBillHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Notificationpage</servlet-name>
+        <url-pattern>/Notificationpage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataHandler</servlet-name>
+        <url-pattern>/DataHandler</url-pattern>
+
         <servlet-name>EditProfileLoading</servlet-name>
         <url-pattern>/EditProfileLoading</url-pattern>
     </servlet-mapping>
@@ -119,6 +152,7 @@
     <servlet-mapping>
         <servlet-name>UpdateUserProfile</servlet-name>
         <url-pattern>/UpdateUserProfile</url-pattern>
+
     </servlet-mapping>
     <session-config>
         <session-timeout>
