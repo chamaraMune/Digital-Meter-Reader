@@ -56,11 +56,12 @@
                                         
                                         <%
                                             List<MeterReading> readingList = (List<MeterReading>) request.getAttribute("readingList");
-                                            System.out.println("IN JSP : "+ readingList.get(0).getDate());
+//                                            System.out.println("IN JSP : "+ readingList.get(0).getDate());
                                  
                                         %>
                                         
                                         <tbody>
+                                            <% if(!readingList.isEmpty()){%>
                                             <c:forEach items="<%=readingList%>" var= "object">
                                             <tr class="gradeA" style="text-align: center;">
                                                 <td><c:out value="${object.getDate()}"/></td>
@@ -69,6 +70,8 @@
                                                 <td><c:out value="${object.getUnit()}"/></td>
                                             </tr>
                                         </c:forEach>
+                                            <%}%>
+                                        
                                         
                                         </tbody>
                                         
