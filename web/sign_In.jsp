@@ -80,45 +80,6 @@
     <body>
         <%@include file="mainNavigation.jsp" %>
 
-        <!-- Top content -->
-<!--        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        
-                        Starting login form
-                        <div class="col-sm-5">
-                            <div class="form-box">
-	                        <div class="form-top">
-                                    <div class="form-top-left">
-                                        <h3>Login to Digital Meter Reader</h3>
-                                        <p>Enter username and password to log on:</p>
-                                    </div>
-                                    <div class="form-top-right">
-	                        	<i class="fa fa-key"></i>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-bottom">
-				    <form role="form" action="LoginHandler" method="post" class="login-form">
-                                        username input field in login form
-				        <div class="form-group">
-				            <label class="sr-only" for="form-username">Username</label>
-                                            <input type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username" >
-				        </div>
-                                        password input field in login form        
-				        <div class="form-group">
-				            <label class="sr-only" for="form-password">Password</label>
-                                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" >
-				        </div>
-                                        Submit button in login form
-				        <button type="submit" class="btn">Sign in!</button>
-				    </form>
-			        </div>
-		            </div>
-		        </div>-->
-                        <!--Ending login form-->
 	                        
                        
                         

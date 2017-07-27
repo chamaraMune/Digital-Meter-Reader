@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Admin Dashboard</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -25,7 +25,8 @@
 </head>
 <body>
     <div id="wrapper" style="background-color: #145D8E;">
-        <nav class="navbar navbar-default navbar-static-top " role="navigation" style="margin-bottom: 0; background-color: #145D8E;"> 
+        <nav class="navbar navbar-default navbar-static-top " role="navigation" style="margin-bottom: 0; background-color: #145D8E;">
+            
             <div class="navbar-header"   style="position: fixed;">
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -34,7 +35,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #EECD47; float: right; width: 260px; height: 60px">Digital Meter Reader</a>
+                <a class="navbar-brand" href="adminHome" style="text-align: center;font-size: 20px;background-color: #EECD47; float: right; width: 260px; height: 60px">
+                    Digital Meter Reader</a>
                 
             </div>         
             	
@@ -49,8 +51,8 @@
                     <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-user"></i>&nbsp;<%=welcomeMsg%>
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Edit Profile</a></li>
-                        <li><a href="LogoutHandler">Log out</a></li>
+                        <li><a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;Edit Profile</a></li>
+                        <li><a href="LogoutHandler"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Log out</a></li>
                     </ul>           
                 </div>
             </div>
@@ -62,20 +64,16 @@
            <nav class="navbar-default navbar-left" role="navigation" style="width:260px; position: fixed; margin-top: 50px">
                <div class="sidebar-collapse" style="background-color: white;">
                    <ul class="nav" id="main-menu" style="">
-<!--				<li class="text-center">
-                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>-->
+
 				
 					
                     <li>
                         <a  href="AdminHomePage" style="background-color: #145D8E  ;"><i class="fa fa-home fa-3x"></i>Home</a>
                     </li>
                     <li>
-                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-user fa-3x"></i>User Registration</a>
+                        <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-user fa-3x"></i>User Registration</a>
                     </li>
-                    <li>
-                        <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-envelope-square fa-3x"></i>DMR Requests</a>
-                    </li>
+                    
                     <li>
                         <a  href="NotificationPage" style="background-color: #145D8E;"><i class="fa fa-bell-o fa-3x"></i>Notifications</a>
                     </li>
@@ -83,17 +81,11 @@
                         <a  href="chart.jsp" style="background-color: #145D8E;"><i class="fa fa-bar-chart fa-3x"></i>Visual Analytics</a>
                     </li>	
                     <li>
+
                         <a  href="SendSMSPage" style="background-color: #145D8E;"><i class="fa fa-send fa-3x"></i>Send SMS</a>
                     </li>
                     
-                    <!--li>
-                        <a  href="form.jsp" style="background-color: #145D8E;"><i class="fa fa-edit fa-3x"></i>Analytical</a>
-                    </li-->
-                    
-					
-					                   
 
-                  	
                 </ul>
                
             </div>

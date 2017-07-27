@@ -194,7 +194,14 @@
 	    });
 	});
 });
+   var flag = '${loginfail}';
+     
+   if(flag){
+       console.log("login fail alert");
+       alert("Your username or password is incorrect");
+   }
 </script>
+
 
 
 
