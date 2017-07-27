@@ -12,17 +12,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.dmr.project.model.User;
-import com.dmr.project.dao.UserDao;
-import com.dmr.project.dao.DBTest;
 import javax.servlet.http.HttpSession;
-import com.dmr.project.service.PasswordHashingService;
+import com.dmr.project.dao.EditUserProfileDAO;
+import com.dmr.project.model.User;
 
 /**
  *
  * @author chamara
  */
-public class LoginHandler extends HttpServlet {
+public class EditProfileLoading extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,52 +29,18 @@ public class LoginHandler extends HttpServlet {
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
+     * @throws IOException if an I/O error ouccurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        boolean flag = true;
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        System.out.println("Username : "+username+" password : "+ password);
-        password = PasswordHashingService.getHashedPassword(password.toCharArray());
-        System.out.println("Hashed password"+password);
-        
-//        Creating user object for user who is intending to login
-        User loggingUser = new User();
-        loggingUser.setPassword(password);
-        loggingUser.setUsername(username);
-        
-//        Check whether input creditionals are valid or not
-        boolean isValid = UserDao.getLogUserValidate(loggingUser);
-        System.out.println("Here :"+isValid);
-        if(isValid)
-        {
-            
-            if(loggingUser.getUsername().equals("admin")){
-                HttpSession session = request.getSession();
-                session.setAttribute("loggedUsername", loggingUser.getUsername());
-                response.sendRedirect("AdminHomePage");
-            }
-            else{
-                HttpSession session = request.getSession();
-                session.setAttribute("loggedUsername",loggingUser.getUsername());
-                response.sendRedirect("HomeServlet");
-            }
-
-        }
-        else
-        {
-            flag = true;
-            request.setAttribute("loginfail", flag);
-            RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-            rd.forward(request, response);
-        }
-        
-        
-        
-//       RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
-//       rd.include(request, response);
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        String loggedUser =(String) session.getAttribute("loggedUsername");
+        System.out.println("EDIT USER PROFILE : "+loggedUser);
+        User user = EditUserProfileDAO.getUserDetails(loggedUser);
+        System.out.println("IN ADDRESSS : "+ user.getAddress());
+        request.setAttribute("loggeduser", user);
+        System.out.println("In Servelet Edit profile : "+ user.getUsername());
+        RequestDispatcher rd = request.getRequestDispatcher("/editProfile.jsp");
+        rd.include(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

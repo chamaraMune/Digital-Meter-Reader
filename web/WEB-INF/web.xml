@@ -48,6 +48,18 @@
         <servlet-name>TransformerHandler</servlet-name>
         <servlet-class>com.dmr.project.controller.TransformerHandler</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditProfileLoading</servlet-name>
+        <servlet-class>com.dmr.project.controller.EditProfileLoading</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditUserProfileDAO</servlet-name>
+        <servlet-class>com.dmr.project.dao.EditUserProfileDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateUserProfile</servlet-name>
+        <servlet-class>com.dmr.project.controller.UpdateUserProfile</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
         <url-pattern>/LoginHandler</url-pattern>
@@ -95,6 +107,18 @@
     <servlet-mapping>
         <servlet-name>TransformerHandler</servlet-name>
         <url-pattern>/TransformerHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProfileLoading</servlet-name>
+        <url-pattern>/EditProfileLoading</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditUserProfileDAO</servlet-name>
+        <url-pattern>/EditUserProfileDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateUserProfile</servlet-name>
+        <url-pattern>/UpdateUserProfile</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
