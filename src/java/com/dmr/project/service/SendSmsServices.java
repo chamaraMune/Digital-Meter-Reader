@@ -19,8 +19,8 @@ public class SendSmsServices {
             public String sendSms(String massage, String no) {
 		try {
 			// Construct data
-			String user = "username=" + "dmr.new2@gmail.com";
-			String hash = "&hash=" + "7d3acf447849acfed659c886fcb5b72b2332e098c6489d197ca82293698d77e0 ";
+			String user = "username=" + "sudesh.kapugamage25@gmail.com";
+			String hash = "&hash=" + "25b47ed8a0641aaad9ff8bdc33e9078c56a5e362425d7bb52d463ce1cc6df8cb ";
 			String message = "&message=" + massage;
 			String sender = "&sender=" + "dmr";
 			String numbers = "&numbers=" + no;

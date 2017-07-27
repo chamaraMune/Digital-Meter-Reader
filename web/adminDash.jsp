@@ -77,7 +77,7 @@
                         <a  href="AdminDMRRequest" style="background-color: #145D8E;"><i class="fa fa-envelope-square fa-3x"></i>DMR Requests</a>
                     </li>
                     <li>
-                        <a  href="tab_panel.jsp" style="background-color: #145D8E;"><i class="fa fa-bell-o fa-3x"></i>Notifications</a>
+                        <a  href="NotificationPage" style="background-color: #145D8E;"><i class="fa fa-bell-o fa-3x"></i>Notifications</a>
                     </li>
                     <li>
                         <a  href="chart.jsp" style="background-color: #145D8E;"><i class="fa fa-bar-chart fa-3x"></i>Visual Analytics</a>
